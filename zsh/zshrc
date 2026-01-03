@@ -130,4 +130,4 @@ alias cfg-nvim="nvim ~/dotfiles/nvim"
 
 alias s1="kitty +kitten ssh djv@192.168.178.41"
 alias s2="kitty +kitten ssh djv@192.168.178.33"
-
+alias notes="nvim ~/obsdn/"
