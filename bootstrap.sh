@@ -15,6 +15,7 @@ ln -sf ~/dotfiles/nvim ~/.config/nvim
 ln -sf ~/dotfiles/hypr ~/.config/hypr
 sudo ln -sf ~/dotfiles/keyd/default.conf /etc/keyd/default.conf
 
+ln -s ~/dotfiles/wpper ~/.config
 echo "Enabling services..."
 sudo systemctl enable keyd --now
 
