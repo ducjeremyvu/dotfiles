@@ -128,6 +128,6 @@ alias cfg-hypr="nvim ~/dotfiles/hypr/"
 alias cfg-zsh="nvim ~/dotfiles/zsh/zshrc"
 alias cfg-nvim="nvim ~/dotfiles/nvim"
 
-alias s1="ssh djv@192.168.178.41"
+alias s1="kitty +kitten ssh djv@192.168.178.41"
 alias s2="ssh djv@192.168.178.33"
 
