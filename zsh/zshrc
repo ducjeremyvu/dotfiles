@@ -136,3 +136,6 @@ alias notes="nvim ~/obsdn/"
 # Source local secrets if they exist
 [ -f "$HOME/.config/zsh/secrets.zsh" ] && source "$HOME/.config/zsh/secrets.zsh"
 
+
+
+alias nn="nvim ~/obsdn/$(date +%Y%m%d)-note.md"

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+### unfortunately this one is only compatible with arch linux, so if linked to another system, cheryy pick the lines that are suitable most of them should work except from commands with pacman
+
 set -e
 
 echo "=== Bootstrapping system ==="
@@ -14,10 +16,16 @@ ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
 ln -sf ~/dotfiles/nvim ~/.config/nvim
 ln -sf ~/dotfiles/hypr ~/.config/hypr
 sudo ln -sf ~/dotfiles/keyd/default.conf /etc/keyd/default.conf
+ln -sf ~/dotfiles/tmux/tmux.conf ~/.config/tmux/.tmux.conf
 
+echo "linking wallpaper files"
 ln -s ~/dotfiles/wpper ~/.config
 
+echo "linking p10k config"
 ln -s ~/dotfiles/p10k/p10k.zsh ~/.p10k.zsh
+
+echo "linking secrets so zsh can call environment"
+ln -s ~/dotfiles/zsh/secrets.zsh ~/.config/zsh/secrets.zsh
 
 echo "Enabling services..."
 sudo systemctl enable keyd --now
