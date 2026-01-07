@@ -139,3 +139,5 @@ alias notes="nvim ~/obsdn/"
 
 
 alias nn="nvim ~/obsdn/$(date +%Y%m%d)-note.md"
+
+alias wifi="nmcli -f BARS dev wifi list | tail -n +2"
