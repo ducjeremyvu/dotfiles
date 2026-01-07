@@ -138,4 +138,4 @@ alias notes="nvim ~/obsdn/"
 
 
 
-alias nn="nvim ~/obsdn/$(date +%Y%m%d)-note.md"
+alias nn="nvim ~/obsdn/notes/$(date +%Y%m%d)-note.md"
