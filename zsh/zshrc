@@ -130,7 +130,7 @@ alias cfg-nvim="nvim ~/dotfiles/nvim"
 
 alias s1="kitty +kitten ssh djv@192.168.178.41"
 alias s2="kitty +kitten ssh djv@192.168.178.33"
-alias notes="nvim ~/obsdn/"
+alias notes="nvim ~/obsdn/djv"
 
 
 # Source local secrets if they exist
@@ -138,6 +138,8 @@ alias notes="nvim ~/obsdn/"
 
 
 
+alias nn="nvim ~/obsdn/djv/notes/$(date +%Y%m%d)-note.md"
 
-alias wifi="nmcli -f BARS dev wifi list | tail -n +2"
-alias nn="nvim ~/obsdn/notes/$(date +%Y%m%d)-note.md"
+
+export SERVER1IP='192.168.178.41'
+export ARCHLOCALIP='192.168.178.38'
