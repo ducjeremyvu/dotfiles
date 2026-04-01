@@ -30,3 +30,17 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.expandtab = true
   end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    vim.keymap.set("n", "<leader>md", function()
+      local bufnr = 0
+      if vim.diagnostic.is_disabled(bufnr) then
+        vim.diagnostic.enable(bufnr)
+      else
+        vim.diagnostic.disable(bufnr)
+      end
+    end, { buffer = true, desc = "Toggle markdown diagnostics" })
+  end,
+})
